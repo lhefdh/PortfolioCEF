@@ -5,7 +5,7 @@
         <div class="about-section">
             <div class="section__pic-container">
                 <img 
-                src="../assets/pdp.png" 
+                src="../assets/profile.png" 
                 alt="profile picture"
                 class="about-pic"
                 >
