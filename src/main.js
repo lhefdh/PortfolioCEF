@@ -3,5 +3,6 @@ import App from './App.vue'
 import router from './router/index.js'
 
 createApp(App)
-.mount('#app')
 .use(router)
+.mount('#app')
+
