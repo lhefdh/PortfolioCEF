@@ -1,6 +1,6 @@
 <template>
     <div>
-        <nav>
+        <nav id="desktop-navigation">
             <div class="logo">Mohamed Fadel CHEIKH SAAD BOUH</div>
             <ul class="nav-links">
                 <li><router-link to="/">Accueil</router-link></li>
@@ -42,3 +42,7 @@ export default {
   }
 
 </script>
+
+<style>
+@import url("../style.css"); 
+</style>
