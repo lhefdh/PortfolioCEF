@@ -14,7 +14,7 @@
                     </div>
                     <h2 class="project-title">Curriculum-vitae</h2>
                     <div class="btn-container">
-                        <button class="btn" onclick="location.href='https://github.com'">Github</button>
+                        <button class="btn" onclick="location.href='https://github.com/lhefdh/cv'">Github</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -27,7 +27,7 @@
                     </div>
                     <h2 class="project-title">Page Dynamique</h2>
                     <div class="btn-container">
-                        <button class="btn" onclick="location.href='https://github.com'">Github</button>
+                        <button class="btn" onclick="location.href='https://github.com/lhefdh/page-dynamique'">Github</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -40,7 +40,7 @@
                     </div>
                     <h2 class="project-title">Portfolio</h2>
                     <div class="btn-container">
-                        <button class="btn" onclick="location.href='https://github.com'">Github</button>
+                        <button class="btn" onclick="location.href='https://github.com/lhefdh/PortfolioCEF'">Github</button>
                     </div>
                 </div>
             </div>
