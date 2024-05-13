@@ -35,7 +35,7 @@
                     <p>
                         Hello World! Je m’appelle Mohamed Fadel CHEIKH SAAD BOUH, 
                         développeur Web junior. Après des années de travail dans 
-                        des différentes organisations, J’ai profité de mon installation 
+                        différentes organisations, J’ai profité de mon installation 
                         à Bordeaux pour entamer une reconversion professionnelle dans le Développement Web. 
                         A la recherche de nouveaux défis avec envie et motivation,
                          et toujours en quête d’élargir mes compétences.<br>
