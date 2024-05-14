@@ -18,18 +18,7 @@
                     </router-link>
                 </button>
             </div>
-            <div id="socials-container">
-                <a href="https://linkedin.com/">
-                    <img src="../assets/linkedin.png" 
-                    alt="ma Page LinkedIn"
-                    class="icon"/>
-                </a>
-                <a href="https://github.com/">
-                    <img src="../assets/github.png" 
-                    alt="Mon GitHub"
-                    class="icon"/>
-                </a> 
-            </div>   
+            
         </div>
         
     </div>
