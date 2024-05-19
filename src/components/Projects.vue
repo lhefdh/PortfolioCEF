@@ -15,6 +15,7 @@
                     <h2 class="project-title">Curriculum-vitae</h2>
                     <div class="btn-container">
                         <button class="btn" onclick="location.href='https://github.com/lhefdh/cv'">Github</button>
+                        <button class="btn" @click="modalOpen = !modalOpen">Détails</button>
                     </div>
                 </div>
                 <div class="details-container color-container">
@@ -45,5 +46,27 @@
                 </div>
             </div>
         </div>
+        <div class="modal-bg" :class="{ 'open' : modalOpen }" @click="modalOpen = !modalOpen">
+            <div class="modal" @click="modalOpen = !modalOpen">
+                <label for="title">Titre: </label>
+                <label for="date-of-creation">Date de création: </label>
+                <label for="tools">Technologies utilisées</label>
+                <label for="PDF-link">Télécharger le fichier PDF: </label>
+                <label for="GitHub-link">Consulter le repository GitHub</label>
+                <button class="btn modal-btn" @click="modalOpen = !modalOpen">Fermer</button>
+            </div>
+
+        </div>
     </div>
 </template>
+
+<script>
+    export default {
+    name: 'Projects',
+    data() {
+        return {
+        modalOpen: false,
+        }
+        }
+    }
+</script>
