@@ -18,7 +18,7 @@
                             <label for="title">Titre: {{modalData.title}} </label>
                             <label for="date-of-creation">Date de création: {{modalData.date}} </label>
                             <label for="tools">Technologies utilisées: {{modalData.tools}}</label>
-                            <label for="GitHub-link">Consulter <a :href=modalData.repositoryLink>le repository GitHub</a></label>
+                            <label for="GitHub-link">Consulter <a :href="modalData.repositoryLink">le repository GitHub</a></label>
                             <button class="btn modal-btn" @click="modalOpen = !modalOpen">Fermer</button>
                         </div>
                     </div>  
@@ -80,7 +80,7 @@
             this.modalData.title = this.myProjects[b-1].title,
             this.modalData.date = this.myProjects[b-1].date,
             this.modalData.tools = this.myProjects[b-1].tools,
-            this.modalData.repositoryLink = this.myProjects[id-1].repositoryLink
+            this.modalData.repositoryLink = this.myProjects[b-1].repositoryLink
         }
     }
 }
