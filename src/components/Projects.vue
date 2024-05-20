@@ -18,8 +18,8 @@
                             <label for="title">Titre: {{modalData.title}} </label>
                             <label for="date-of-creation">Date de création: {{modalData.date}} </label>
                             <label for="tools">Technologies utilisées: {{modalData.tools}}</label>
-                            <label for="GitHub-link">Consulter <a :href="modalData.repositoryLink">le repository GitHub</a></label>
-                            <button class="btn modal-btn" @click="modalOpen = !modalOpen">Fermer</button>
+                            <label for="GitHub-link">Consulter <a :href="modalData.repositoryLink" target="_blank">le repository GitHub</a></label>
+                            <button class="modal-btn" @click="modalOpen = !modalOpen">Fermer</button>
                         </div>
                     </div>  
                 </div>  
