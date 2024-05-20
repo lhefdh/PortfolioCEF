@@ -193,7 +193,6 @@ footer {
     color: black;
     cursor: pointer;
     border: none;
-    border-color: rgb(163,163,163);
   } 
 
     /* ABOUT SECTION*/
@@ -225,8 +224,7 @@ footer {
       padding: 1.5rem;
       flex: 1;
       border-radius: 2rem;
-      border: rgb(53,53,53) 0.1rem solid;
-      border-color: rgb(163,163,163);
+      border: rgb(163,163,163) 0.1rem solid;
       text-align: center;
     }
       /* EXPERIENCE SECTION*/
@@ -288,13 +286,12 @@ footer {
       display: flex;
       justify-content: center;
       align-items: center;
-      visibility: hidden;
-      opacity: 0;
-      transition: visibility 0.5s, opacity 0.5s;
+      visibility: hidden;    
+    
     }
     .modal-bg.open{
       visibility:visible;
-      opacity: 0.96;
+      opacity: 0.70;
     }
     label {
       background-color: rgb(193, 193, 193);
@@ -302,22 +299,28 @@ footer {
     }
     label a{
       background-color: rgb(193, 193, 193);
+      font-weight: 600;
     }
     .modal{
       background-color: rgb(193, 193, 193);
       width: 25%;
       height: 30%;
+      padding: 1.5rem;
       display: flex;
+      flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      flex-direction: column;
+      border-radius: 2rem;
+      border: rgb(0,0,0) 0.2rem solid;
     } 
     .modal-btn {
       padding: 0.5rem;
-      width: 6rem;
-      border: rgb(53,53,53) 0.1rem solid;
+      width: 6rem;  
+      font-weight : 600;
+      border-radius: 2rem;
+      color: rgb(0,0,0);
+      border: rgb(0,0,0) 0.1rem solid;
     }
-
        /* Contact */
    #contact {
     position: relative;
