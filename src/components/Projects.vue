@@ -10,7 +10,9 @@
                     </div>
                     <h2 class="project-title">{{item.title}}</h2>
                     <div class="btn-container">
-                        <button class="btn" @click="window.open('{{item.repositoryLink}}')">Github</button>
+                        <a :href="item.repositoryLink" target="_blank">
+                            <button class="btn">Github</button>
+                        </a>
                         <button class="btn" @click="modalOpen = !modalOpen;addProjectData(item.id);" >Détails</button>
                     </div>
                     <div class="modal-bg" :class="{ 'open' : modalOpen }" @click="modalOpen = !modalOpen">
