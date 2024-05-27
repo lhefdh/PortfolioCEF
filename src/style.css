@@ -45,9 +45,14 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: grey;
+  color: rgb(163, 163, 163);
   text-decoration: underline;
   text-underline-offset: 0.75rem;
+}
+a.router-link-active {
+  color: rgb(163, 163, 163);
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
 }
 .logo{
   font-size: 2rem;
@@ -130,11 +135,39 @@ footer {
     height: 60vh;
   }
 
+  /* Error Page */
+  #errorpage{
+    padding: 20vh 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #error-page-img {
+    height: 40vh;
+    width: 60vw;
+  }
+  #error-page-btn {
+    padding: 1rem;
+    width: 12rem;
+    border-radius: 2rem;
+    color: rgb(53,53,53);
+    border: rgb(53,53,53) 0.1rem solid;
+  }
+  #error-page-btn a:hover{
+    color: black;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  #error-page-btn:hover{
+    border: none;
+  }
+
   /* Home section */
   #home{
     display: flex;
     gap: 5rem;
   }
+  
   .section__pic-container {
     display: flex;
     height: 400px;
@@ -272,6 +305,9 @@ footer {
       border-radius: 2rem;
       width: 70%;
       height: 70%;
+    }
+    .project-img:hover {
+      box-shadow: 10px 5px 5px rgb(163,163,163) ;
     }
     .project-title {
       margin: 0.75rem;

@@ -5,12 +5,20 @@ import Experience from '../components/Experience.vue'
 import Projects from '../components/Projects.vue'
 import Contact from '../components/Contact.vue'
 
+
+
+
 const routes = [
-    {
+      {
         path: '/',
         name: 'Home',
         component: Home
       },
+
+      //Error Page
+      
+      
+
       {
         path: '/aboutme',
         name: 'Aboutme',
@@ -37,3 +45,4 @@ const router = createRouter({
     routes
 })
 export default router
+
