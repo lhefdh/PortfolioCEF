@@ -2,6 +2,7 @@
   <div>
     <Errorpage v-if="$route.path != '/' && $route.path !='/home' && $route.path !='/aboutme' && $route.path !='/experience' && $route.path !='/projects' && $route.path !='/contact'"/>
     <Navbar v-else/>
+    <FooterC/>
   </div>
 </template>
 
@@ -13,6 +14,7 @@ import Experience from './components/Experience.vue'
 import Projects from './components/Projects.vue'
 import Contact from './components/Contact.vue'
 import Errorpage from './components/Errorpage.vue'
+import FooterC from './components/Footer.vue'
 
 export default {
   name:'App',
@@ -23,7 +25,13 @@ export default {
     Experience,
     Projects,
     Contact,
-    Errorpage
+    Errorpage,
+    FooterC
   }
 }
 </script>
+
+<style>
+@import url("style.css"); 
+@import url("media-queries.css");
+</style>
