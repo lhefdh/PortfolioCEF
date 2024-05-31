@@ -10,9 +10,9 @@
                     </div>
                     <h2 class="project-title">{{item.title}}</h2>
                     <div class="btn-container">
-                        <a :href="item.repositoryLink" target="_blank">
-                            <button class="btn">Github</button>
-                        </a>
+                      
+                            <button @click=RepositoryRedirect(item.id)  class="btn">Github</button>
+                      
                         <button class="btn" @click="modalOpen = !modalOpen;addProjectData(item.id);" >Détails</button>
                     </div>
                     <div class="modal-bg" :class="{ 'open' : modalOpen }" @click="modalOpen = !modalOpen">
@@ -68,7 +68,7 @@
                  {
                     id: 3,
                     title:'Portfolio',
-                    date: '19 Mai 2023',
+                    date: '19 Mai 2024',
                     tools: 'HTML, CSS et JavaScript',
                     repositoryLink: 'https://github.com/lhefdh/PortfolioCEF',
                     imgSrc: portfolioIcon,
@@ -78,6 +78,9 @@
         }
     },
     methods: {
+        RepositoryRedirect(b) {   
+            window.open(this.myProjects[b-1].repositoryLink);
+        },
         addProjectData(b) {  
             this.modalData.title = this.myProjects[b-1].title,
             this.modalData.date = this.myProjects[b-1].date,
