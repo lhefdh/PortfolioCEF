@@ -18,13 +18,13 @@
           <span></span>
           <span></span>
           <span></span>
-          <div class="menu-links" :class="{ 'open' : menuOpen }">
+          <ul class="menu-links" :class="{ 'open' : menuOpen }">
             <li class ="navlistitem"><router-link to="/">Accueil</router-link></li>
             <li class ="navlistitem"><router-link to="/aboutme">Profil</router-link></li>
             <li class ="navlistitem"><router-link to="/experience">Connaissances</router-link></li>
             <li class ="navlistitem"><router-link to="/projects">Projets</router-link></li>
             <li class ="navlistitem"><router-link to="/contact">Contact</router-link></li>
-          </div>
+          </ul> 
         </div> 
       </div>
     </nav>
