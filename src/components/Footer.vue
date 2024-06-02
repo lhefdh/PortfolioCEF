@@ -23,8 +23,18 @@
                 </a> 
             </div>   
             <p>Dernière mise à jour le {{lastmodif}}</p>
-            <p>Copyright &#169; 2024</p>
-            
+            <p>Copyright &#169; 2024</p> 
         </footer>
     </div>
 </template>
+
+<script>
+export default {
+  name: 'FooterC',
+  data() {
+    return {
+       lastmodif : document.lastModified
+      }
+    }
+  }
+</script>

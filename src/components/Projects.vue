@@ -4,23 +4,31 @@
         <h1 class="title">Projets</h1>
         <div class="experience-details-container">
             <div class="about-container">
+                <!-- Création de container au nombre d'objets contenus dans MyProjects -->
                 <div v-for="item in myProjects" :key="item.id" class="details-container color-container">
                     <div class="article-container">
                         <img :src=item.imgSrc :alt=item.imgAlt class="project-img">
                     </div>
                     <h2 class="project-title">{{item.title}}</h2>
                     <div class="btn-container">
-                      
-                            <button @click=RepositoryRedirect(item.id)  class="btn">Github</button>
-                      
+                        <button @click=RepositoryRedirect(item.id)  class="btn">Github</button>
+
+                        <!-- changer la valeur de modalOpen de false à true aprés clic   -->
+                        <!-- aprés le clic déclencher la fonction addProjectData qui charge les données de chaque projets selon le paramétre item.id -->
                         <button class="btn" @click="modalOpen = !modalOpen;addProjectData(item.id);" >Détails</button>
                     </div>
+
+                    <!-- le changement de la valeur modalOpen déclenche la classe open -->
+                    <!-- Mais le clic dans ce container parent remet la valeur de modalOpen à false pour fermer le modal -->
                     <div class="modal-bg" :class="{ 'open' : modalOpen }" @click="modalOpen = !modalOpen">
+
+                        <!-- le clic dans ce container enfant change la valeur de modalOpen deux fois ce qui remet sa valeur sur true, ainsi le modal reste affiché -->
                         <div class="modal" @click="modalOpen = !modalOpen">
                             <label for="title">Titre: {{modalData.title}} </label>
                             <label for="date-of-creation">Date de création: {{modalData.date}} </label>
                             <label for="tools">Technologies utilisées: {{modalData.tools}}</label>
                             <label for="GitHub-link">Consulter <a :href="modalData.repositoryLink" target="_blank">le repository GitHub</a></label>
+                            <!-- le clic dans ce container enfant change la valeur de modalOpen trois fois ce qui remet sa valeur sur false et ferme le modal -->
                             <button class="modal-btn" @click="modalOpen = !modalOpen">Fermer</button>
                         </div>
                     </div>  
