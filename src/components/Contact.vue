@@ -16,7 +16,7 @@
                             <input type="email" name="user_email" placeholder="Votre e-mail" >
                         </div>
                         <div class="field">
-                            <textarea type="textarea" name="message" cols="30"  placeholder="Votre Message"></textarea>
+                            <textarea name="message" cols="30"  placeholder="Votre Message"></textarea>
                         </div>
                     </div>
                     <div class="field">

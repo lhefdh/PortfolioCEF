@@ -5,7 +5,7 @@
         <div class="experience-details-container">
             <div class="about-container">
                 <!-- Création de container au nombre d'objets contenus dans MyProjects -->
-                <div v-for="item in myProjects" :key="item.id" class="details-container color-container">
+                <div v-for="item in myProjects" :key="item" class="details-container color-container">
                     <div class="article-container">
                         <img :src=item.imgSrc :alt=item.imgAlt class="project-img">
                     </div>
@@ -24,10 +24,10 @@
 
                         <!-- le clic dans ce container enfant change la valeur de modalOpen deux fois ce qui remet sa valeur sur true, ainsi le modal reste affiché -->
                         <div class="modal" @click="modalOpen = !modalOpen">
-                            <label for="title">Titre: {{modalData.title}} </label>
-                            <label for="date-of-creation">Date de création: {{modalData.date}} </label>
-                            <label for="tools">Technologies utilisées: {{modalData.tools}}</label>
-                            <label for="GitHub-link">Consulter <a :href="modalData.repositoryLink" target="_blank">le repository GitHub</a></label>
+                            <label class="modal-label">Titre: {{modalData.title}} </label>
+                            <label class="modal-label">Date de création: {{modalData.date}} </label>
+                            <label class="modal-label">Technologies utilisées: {{modalData.tools}}</label>
+                            <label class="modal-label">Consulter <a :href="modalData.repositoryLink" target="_blank">le repository GitHub</a></label>
                             <!-- le clic dans ce container enfant change la valeur de modalOpen trois fois ce qui remet sa valeur sur false et ferme le modal -->
                             <button class="modal-btn" @click="modalOpen = !modalOpen">Fermer</button>
                         </div>
