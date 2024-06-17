@@ -6,8 +6,6 @@ import Projects from '../components/Projects.vue'
 import Contact from '../components/Contact.vue'
 
 
-
-
 const routes = [
       {
         path: '/',

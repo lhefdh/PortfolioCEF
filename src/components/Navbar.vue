@@ -32,28 +32,14 @@
         </div> 
       </div>
     </nav>
-
-    <!-- l'endroit d'affichage des components appelés via le router -->
-    <router-view></router-view>
-     
   </div>
 </template>
 
 <script>
-import Home from './Home.vue'
-import Aboutme from './Aboutme.vue'
-import Experience from './Experience.vue'
-import Projects from './Projects.vue'
-import Contact from './Contact.vue'
+
 export default {
   name: 'Navbar',
-  components: {
-    Home,
-    Aboutme,
-    Experience,
-    Projects,
-    Contact,
-  },
+
   data() {
     return {
        menuOpen: false,

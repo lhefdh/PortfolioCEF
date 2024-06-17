@@ -4,6 +4,8 @@
     <Errorpage v-if="$route.path != '/' && $route.path !='/home' && $route.path !='/aboutme' && $route.path !='/experience' && $route.path !='/projects' && $route.path !='/contact'"/>
     <div v-else>
       <Navbar/>
+      <!-- l'endroit d'affichage des components appelés via le router -->
+      <router-view></router-view>
       <FooterC/>
     </div>
   </div>
