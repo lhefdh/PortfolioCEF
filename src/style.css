@@ -420,24 +420,6 @@ footer {
     color: rgb(53,53,53);
     border: rgb(53,53,53) 0.1rem solid;
    }
-   .contact-info-upper-container {
-    margin: 0 auto;
-    height: 7vh;
-    display: flex;
-    justify-content: center;
-    border-radius: 2rem;
-    border: rgb(163,163,163) 0.1rem solid;
-   }
-   .contact-info-container {
-    display: flex;
-    align-items :center;
-    justify-content :center;
-    gap: 0.5rem;
-    margin: 0.5rem;
-   }
-   .email-icon {
-    height: 2.5rem
-   } 
 
 
   

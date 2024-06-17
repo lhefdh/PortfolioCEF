@@ -23,24 +23,6 @@
                         <button class="btn btn-submit" type="submit">Envoyez</button>
                     </div>
                 </form>
-                <div class="contact-info-upper-container">
-                    <div class="contact-info-container">
-                        <img 
-                        src="../assets/email.png" 
-                        alt="Email icon"
-                        class="email-icon"
-                        > 
-                        <p><a href="mailto:lhefdh@gmail.com">lhefdh@gmail.com</a></p>
-                    </div>
-                    <div class="contact-info-container">
-                        <img 
-                        src="../assets/linkedin.png" 
-                        alt="Linkedin icon"
-                        class="icon"
-                        > 
-                        <p><a href="https://linkedin.com">Linkedin Profile</a></p>
-                    </div>
-                </div>
             </div>
         </div>
     </div>       
