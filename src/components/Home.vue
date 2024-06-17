@@ -11,14 +11,14 @@
             <div class="btn-container">
                 <a :href=CvSrc target="_blank" download="CV">
                   <button class="btn">    
-                          Mon CV
+                    Mon CV
                   </button>
                 </a> 
                 
                 <router-link to="/contact">
-                    <button class="btn">
-                    Contact
-                    </button>
+                  <button class="btn">
+                  Contact
+                  </button>
                 </router-link>      
 
             </div>   

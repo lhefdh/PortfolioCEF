@@ -1,7 +1,9 @@
 <template>
   <div>
     <nav id="desktop-navigation">
-      <div class="logo">Mohamed Fadel CHEIKH SAAD BOUH</div>
+      <div class="logo">
+        <router-link to="/">Mohamed Fadel CHEIKH SAAD BOUH</router-link>
+      </div>
       <ul class="nav-links">
         <li><router-link to="/">Accueil</router-link></li>
         <li><router-link to="/aboutme">Profil</router-link></li>
