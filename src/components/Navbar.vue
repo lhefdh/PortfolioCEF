@@ -7,7 +7,7 @@
       <ul class="nav-links">
         <li><router-link to="/">Accueil</router-link></li>
         <li><router-link to="/aboutme">Profil</router-link></li>
-        <li><router-link to="/experience">Connaissances</router-link></li>
+        <li><router-link to="/skills">Compétences</router-link></li>
         <li><router-link to="/projects">Projets</router-link></li>
         <li><router-link to="/contact">Contact</router-link></li>
       </ul>   
@@ -27,7 +27,7 @@
           <ul class="menu-links" :class="{ 'open' : menuOpen }">
             <li class ="navlistitem"><router-link to="/">Accueil</router-link></li>
             <li class ="navlistitem"><router-link to="/aboutme">Profil</router-link></li>
-            <li class ="navlistitem"><router-link to="/experience">Connaissances</router-link></li>
+            <li class ="navlistitem"><router-link to="/skills">Compétences</router-link></li>
             <li class ="navlistitem"><router-link to="/projects">Projets</router-link></li>
             <li class ="navlistitem"><router-link to="/contact">Contact</router-link></li>
           </ul> 

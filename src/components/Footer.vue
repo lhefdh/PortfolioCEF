@@ -5,7 +5,7 @@
                 <ul class="nav-links-footer">
                     <li><router-link to="/">Accueil</router-link></li>
                     <li><router-link to="/aboutme">Profil</router-link></li>
-                    <li><router-link to="/experience">Connaissances</router-link></li>
+                    <li><router-link to="/skills">Compétences</router-link></li>
                     <li><router-link to="/projects">Projets</router-link></li>
                     <li><router-link to="/contact">Contact</router-link></li>
                 </ul>      

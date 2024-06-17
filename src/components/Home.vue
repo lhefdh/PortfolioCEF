@@ -9,18 +9,14 @@
             <br>
             <P class="section__text__p2">Développeur Full-Stack</P>
             <div class="btn-container">
-                <a :href=CvSrc target="_blank" download="CV">
-                  <button class="btn">    
-                    Mon CV
-                  </button>
-                </a> 
-                
+                <button class="btn" @click=CvDownloader()>    
+                  Mon CV
+                </button>
                 <router-link to="/contact">
-                  <button class="btn">
+                  <div class="btn">
                   Contact
-                  </button>
-                </router-link>      
-
+                  </div> 
+                </router-link>
             </div>   
         </div>
         
@@ -33,9 +29,22 @@ export default {
   name: 'Home',
   data() {
     return {
-       CvSrc: CV
+       CvSrc: CV,
+       pdfFileName: CV
       }
-    } 
+    },
+  methods:{
+    CvDownloader(){
+      // create element <a> for download CV
+      const link = document.createElement('a');
+      link.href = this.CvSrc;
+      link.target = '_blank';
+      link.download = this.pdfFileName;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  } 
   }
 
 </script>

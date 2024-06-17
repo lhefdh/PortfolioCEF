@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- utilisation de v-if pour soit la redirection vers la page d'erreur soit l'affichage des components. -->
-    <Errorpage v-if="$route.path != '/' && $route.path !='/home' && $route.path !='/aboutme' && $route.path !='/experience' && $route.path !='/projects' && $route.path !='/contact'"/>
+    <Errorpage v-if="$route.path != '/' && $route.path !='/home' && $route.path !='/aboutme' && $route.path !='/skills' && $route.path !='/projects' && $route.path !='/contact'"/>
     <div v-else>
       <Navbar/>
       <!-- l'endroit d'affichage des components appelés via le router -->
